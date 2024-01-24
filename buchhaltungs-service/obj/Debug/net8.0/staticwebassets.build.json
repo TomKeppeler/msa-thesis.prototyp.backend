@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eAa2o9dpVvoGZ+y5kEwmt5UHek6j2kHou4DZZRGw6fk=",
+  "Source": "buchhaltungs-service",
+  "BasePath": "_content/buchhaltungs-service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

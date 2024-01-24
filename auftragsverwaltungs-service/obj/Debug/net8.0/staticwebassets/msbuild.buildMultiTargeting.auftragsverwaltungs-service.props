@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\auftragsverwaltungs-service.props" />
+</Project>

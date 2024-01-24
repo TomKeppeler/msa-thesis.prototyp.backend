@@ -1,0 +1,6 @@
+@auftragsverwaltungs_service_HostAddress = http://localhost:5191
+
+GET {{auftragsverwaltungs_service_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

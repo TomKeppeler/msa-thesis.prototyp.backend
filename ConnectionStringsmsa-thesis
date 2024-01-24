@@ -1,0 +1,3 @@
+ConnectionStringsmsa-thesis
+
+Server=localhost,1433;Database=tempdb;User ID=sa;Password=<PlaceholderPassword>;Persist Security Info=False;TrustServerCertificate=true;
