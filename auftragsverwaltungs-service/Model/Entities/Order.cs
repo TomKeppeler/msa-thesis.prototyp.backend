@@ -1,9 +1,9 @@
-using auftragsverwaltung_service.Model.Entities.Common;
+using auftragsverwaltungs_service.Model.Entities.Common;
 using buchhaltungs_service.Model.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace auftragsverwaltung_service.Model.Entities
+namespace auftragsverwaltungs_service.Model.Entities
 {
 
     public class Order : BaseEntity

@@ -1,7 +1,5 @@
-using auftragsverwaltung_service.Controllers.Milestone;
-using auftragsverwaltung_service.Model.Entities.Dto;
-using auftragsverwaltung_service.Model.Repository.Milestone;
-using Microsoft.AspNetCore.Http.HttpResults;
+using auftragsverwaltungs_service.Model.Entities.Dto;
+using auftragsverwaltungs_service.Service.Milestone;
 using Microsoft.AspNetCore.Mvc;
 
 namespace auftragsverwaltungs_service.Controller;

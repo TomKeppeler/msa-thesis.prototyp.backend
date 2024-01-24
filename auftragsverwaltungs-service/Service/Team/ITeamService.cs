@@ -1,8 +1,6 @@
+using auftragsverwaltungs_service.Model.Entities.Dto;
 
-
-using auftragsverwaltung_service.Model.Entities.Dto;
-
-namespace auftragsverwaltung_service.Controllers.Team;
+namespace auftragsverwaltungs_service.Service.Team;
 
 public interface ITeamService
 {

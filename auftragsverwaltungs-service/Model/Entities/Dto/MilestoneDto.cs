@@ -1,7 +1,4 @@
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
-
-namespace auftragsverwaltung_service.Model.Entities.Dto;
+namespace auftragsverwaltungs_service.Model.Entities.Dto;
 
 public class MilestoneDto : BaseDto
 {
@@ -20,4 +17,4 @@ public class MilestoneDto : BaseDto
         Open,
         Active
     }
-}   
+}

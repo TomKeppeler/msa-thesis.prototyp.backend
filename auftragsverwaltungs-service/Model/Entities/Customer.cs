@@ -1,7 +1,7 @@
+using auftragsverwaltungs_service.Model.Entities.Common;
 using System.ComponentModel.DataAnnotations;
-using auftragsverwaltung_service.Model.Entities.Common;
 
-namespace auftragsverwaltung_service.Model.Entities;
+namespace auftragsverwaltungs_service.Model.Entities;
 
 public class Customer : BaseEntity
 {

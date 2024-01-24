@@ -1,8 +1,7 @@
-using auftragsverwaltung_service.Model.Repository.Common;
-using Microsoft.AspNetCore.Mvc;
+using auftragsverwaltungs_service.Model.Repository.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace auftragsverwaltung_service.Model.Repository.Customer;
+namespace auftragsverwaltungs_service.Model.Repository.Customer;
 
 public class CustomerRepository : RepositoryBase, ICustomerRepository
 {

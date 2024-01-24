@@ -1,8 +1,6 @@
 using buchhaltungs_service.Model.Entities;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
-namespace auftragsverwaltung_service.Model.Entities.Dto;
+namespace auftragsverwaltungs_service.Model.Entities.Dto;
 
 public class OrderDto : BaseDto
 {

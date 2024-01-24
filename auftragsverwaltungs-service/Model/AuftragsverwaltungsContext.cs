@@ -1,9 +1,8 @@
-using auftragsverwaltung_service.Controllers.Milestone;
-using auftragsverwaltung_service.Model.Entities;
+using auftragsverwaltungs_service.Model.Entities;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
-namespace auftragsverwaltung_service.Model;
+namespace auftragsverwaltungs_service.Model;
 
 public class AuftragsverwaltungsContext : DbContext
 {
@@ -14,22 +13,22 @@ public class AuftragsverwaltungsContext : DbContext
         Password = "admin",
         UserID = "thesis",
         ConnectTimeout = 30,
-        TrustServerCertificate= true
+        TrustServerCertificate = true
     }.ConnectionString;
 
     private static readonly string schema = "the";
     public DbSet<Customer> Customer { get; set; }
-    
+
     public DbSet<Team> Team { get; set; }
-    
+
     public DbSet<Order> Order { get; set; }
-    
+
     public DbSet<Milestone> Milestone { get; set; }
 
     public AuftragsverwaltungsContext()
     {
     }
-    
+
     /// <summary>
     /// Constructor for the AuftragsverwaltungsContext when Testing
     /// </summary>
@@ -37,7 +36,7 @@ public class AuftragsverwaltungsContext : DbContext
     public AuftragsverwaltungsContext(DbContextOptions<AuftragsverwaltungsContext> options) : base(options)
     {
     }
-    
+
     /// <summary>
     /// Override the SaveChanges Method to add the CreatedAt and UpdatedAt Properties
     /// </summary>
@@ -45,14 +44,14 @@ public class AuftragsverwaltungsContext : DbContext
     /// <returns></returns>
     public override int SaveChanges(bool acceptChangesWhenScuccsided)
     {
-       return base.SaveChanges(acceptChangesWhenScuccsided);
+        return base.SaveChanges(acceptChangesWhenScuccsided);
     }
-    
+
     public override async Task<int> SaveChangesAsync(bool acceptChangesWhenScuccsided, CancellationToken cancellationToken = new CancellationToken())
     {
         return await base.SaveChangesAsync(acceptChangesWhenScuccsided, cancellationToken);
     }
-    
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.HasDefaultSchema(schema);
@@ -61,7 +60,7 @@ public class AuftragsverwaltungsContext : DbContext
         modelBuilder.Entity<Order>();
         modelBuilder.Entity<Milestone>();
     }
-    
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured)

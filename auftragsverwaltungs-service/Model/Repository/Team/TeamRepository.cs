@@ -1,7 +1,7 @@
-using auftragsverwaltung_service.Model.Repository.Common;
+using auftragsverwaltungs_service.Model.Repository.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace auftragsverwaltung_service.Model.Repository.Team;
+namespace auftragsverwaltungs_service.Model.Repository.Team;
 
 public class TeamRepository : RepositoryBase, ITeamRepository
 {

@@ -1,8 +1,8 @@
-using auftragsverwaltung_service.Model.Entities.Dto;
-using auftragsverwaltung_service.Model.Repository.Milestone;
+using auftragsverwaltungs_service.Model.Entities.Dto;
+using auftragsverwaltungs_service.Model.Repository.Milestone;
 using AutoMapper;
 
-namespace auftragsverwaltung_service.Controllers.Milestone;
+namespace auftragsverwaltungs_service.Service.Milestone;
 
 public class MilestoneService : IMilestoneService
 {
@@ -13,7 +13,7 @@ public class MilestoneService : IMilestoneService
     {
         _milestoneRepository = milestoneRepository;
         _mapper = mapper;
-    }   
+    }
 
     public async Task<MilestoneDto> CreateMilestone(MilestoneDto milestoneDto)
     {
@@ -44,7 +44,7 @@ public class MilestoneService : IMilestoneService
     {
         var milestone = _mapper.Map<Model.Entities.Milestone>(milestoneDto);
         var milestoneFromDb = _milestoneRepository.GetMilestoneById(id);
-        if(milestoneFromDb == null)
+        if (milestoneFromDb == null)
         {
             throw new ArgumentException("Milestone: " + id + " not found");
         }

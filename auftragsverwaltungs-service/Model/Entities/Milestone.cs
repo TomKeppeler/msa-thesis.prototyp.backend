@@ -1,8 +1,8 @@
-using auftragsverwaltung_service.Model.Entities.Common;
-using System.ComponentModel.DataAnnotations.Schema;
+using auftragsverwaltungs_service.Model.Entities.Common;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace auftragsverwaltung_service.Model.Entities;
+namespace auftragsverwaltungs_service.Model.Entities;
 
 public class Milestone : BaseEntity
 {

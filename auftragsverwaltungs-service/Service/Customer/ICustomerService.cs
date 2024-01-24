@@ -1,7 +1,6 @@
-using auftragsverwaltung_service.Model.Entities.Dto;
-using Microsoft.AspNetCore.Mvc;
+using auftragsverwaltungs_service.Model.Entities.Dto;
 
-namespace auftragsverwaltung_service.Service.Customer;
+namespace auftragsverwaltungs_service.Service.Customer;
 
 public interface ICustomerService
 {

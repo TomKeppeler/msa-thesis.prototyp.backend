@@ -1,8 +1,8 @@
-using auftragsverwaltung_service.Model.Entities.Common;
+using auftragsverwaltungs_service.Model.Entities.Common;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace auftragsverwaltung_service.Model.Entities
+namespace auftragsverwaltungs_service.Model.Entities
 {
 
     public class Team : BaseEntity

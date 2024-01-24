@@ -1,7 +1,7 @@
-using auftragsverwaltung_service.Model.Repository.Common;
+using auftragsverwaltungs_service.Model.Repository.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace auftragsverwaltung_service.Model.Repository.Order;
+namespace auftragsverwaltungs_service.Model.Repository.Order;
 
 public class OrderRepository : RepositoryBase, IOrderRepository
 {

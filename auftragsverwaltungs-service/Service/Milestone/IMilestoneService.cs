@@ -1,8 +1,6 @@
+using auftragsverwaltungs_service.Model.Entities.Dto;
 
-using auftragsverwaltung_service.Model.Entities.Dto;
-using Microsoft.AspNetCore.Mvc;
-
-namespace auftragsverwaltung_service.Controllers.Milestone;
+namespace auftragsverwaltungs_service.Service.Milestone;
 
 public interface IMilestoneService
 {

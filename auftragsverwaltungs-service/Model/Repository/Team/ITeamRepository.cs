@@ -1,7 +1,4 @@
-
-
-
-namespace auftragsverwaltung_service.Model.Repository.Team;
+namespace auftragsverwaltungs_service.Model.Repository.Team;
 
 public interface ITeamRepository
 {

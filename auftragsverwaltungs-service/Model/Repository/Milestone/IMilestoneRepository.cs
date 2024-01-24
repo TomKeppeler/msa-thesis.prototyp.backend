@@ -1,7 +1,4 @@
-
-using auftragsverwaltung_service.Model.Entities.Dto;
-
-namespace auftragsverwaltung_service.Model.Repository.Milestone;
+namespace auftragsverwaltungs_service.Model.Repository.Milestone;
 
 public interface IMilestoneRepository
 {

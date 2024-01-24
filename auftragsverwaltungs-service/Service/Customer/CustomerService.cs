@@ -1,10 +1,8 @@
-using System.Collections;
-using auftragsverwaltung_service.Model.Entities.Dto;
-using auftragsverwaltung_service.Model.Repository.Customer;
+using auftragsverwaltungs_service.Model.Entities.Dto;
+using auftragsverwaltungs_service.Model.Repository.Customer;
 using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
 
-namespace auftragsverwaltung_service.Service.Customer;
+namespace auftragsverwaltungs_service.Service.Customer;
 
 public class CustomerService : ICustomerService
 {

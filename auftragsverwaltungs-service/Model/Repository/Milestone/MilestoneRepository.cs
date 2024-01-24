@@ -1,8 +1,7 @@
-
-using auftragsverwaltung_service.Model.Repository.Common;
+using auftragsverwaltungs_service.Model.Repository.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace auftragsverwaltung_service.Model.Repository.Milestone;
+namespace auftragsverwaltungs_service.Model.Repository.Milestone;
 
 public class MilestoneRepository : RepositoryBase, IMilestoneRepository
 {
@@ -24,7 +23,7 @@ public class MilestoneRepository : RepositoryBase, IMilestoneRepository
 
     public async Task<IEnumerable<Entities.Milestone>> GetAllMilestones()
     {
-        return await Context.Milestone.ToListAsync(); 
+        return await Context.Milestone.ToListAsync();
     }
 
     public async Task<Entities.Milestone> GetMilestoneById(Guid id)

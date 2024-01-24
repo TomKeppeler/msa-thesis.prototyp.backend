@@ -1,7 +1,6 @@
+using auftragsverwaltungs_service.Model.Entities.Dto;
 
-using auftragsverwaltung_service.Model.Entities.Dto;
-
-namespace auftragsverwaltung_service.Controllers.Order;
+namespace auftragsverwaltungs_service.Service.Order;
 
 public interface IOrderService
 {

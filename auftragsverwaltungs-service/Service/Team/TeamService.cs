@@ -1,8 +1,8 @@
-using auftragsverwaltung_service.Model.Entities.Dto;
-using auftragsverwaltung_service.Model.Repository.Team;
+using auftragsverwaltungs_service.Model.Entities.Dto;
+using auftragsverwaltungs_service.Model.Repository.Team;
 using AutoMapper;
 
-namespace auftragsverwaltung_service.Controllers.Team;
+namespace auftragsverwaltungs_service.Service.Team;
 
 public class TeamService : ITeamService
 {
@@ -14,7 +14,7 @@ public class TeamService : ITeamService
         _teamRepository = teamRepository;
         _mapper = mapper;
     }
-    
+
     public async Task<TeamDto> CreateTeam(TeamDto teamDto)
     {
         var team = _mapper.Map<Model.Entities.Team>(teamDto);
@@ -44,7 +44,7 @@ public class TeamService : ITeamService
     {
         var team = _mapper.Map<Model.Entities.Team>(teamDto);
         var teamFromDb = _teamRepository.GetTeamById(id);
-        if(teamFromDb == null)
+        if (teamFromDb == null)
         {
             throw new ArgumentException("Team: " + id + " not found");
         }

@@ -1,8 +1,8 @@
-using auftragsverwaltung_service.Model.Entities.Dto;
-using auftragsverwaltung_service.Model.Repository.Order;
+using auftragsverwaltungs_service.Model.Entities.Dto;
+using auftragsverwaltungs_service.Model.Repository.Order;
 using AutoMapper;
 
-namespace auftragsverwaltung_service.Controllers.Order;
+namespace auftragsverwaltungs_service.Service.Order;
 
 public class OrderService : IOrderService
 {
@@ -42,7 +42,7 @@ public class OrderService : IOrderService
     {
         var order = _mapper.Map<Model.Entities.Order>(orderDto);
         var orderFormDb = await _orderRepository.GetOrderById(id);
-        if(orderFormDb == null)
+        if (orderFormDb == null)
         {
             throw new ArgumentException("Order: " + id + " not found");
         }

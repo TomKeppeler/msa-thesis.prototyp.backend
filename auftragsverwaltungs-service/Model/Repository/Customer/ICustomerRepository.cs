@@ -1,6 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
-
-namespace auftragsverwaltung_service.Model.Repository.Customer;
+namespace auftragsverwaltungs_service.Model.Repository.Customer;
 
 public interface ICustomerRepository
 {

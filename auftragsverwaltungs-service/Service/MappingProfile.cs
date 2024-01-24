@@ -1,17 +1,16 @@
-using auftragsverwaltung_service.Model.Entities;
-using auftragsverwaltung_service.Model.Entities.Dto;
+using auftragsverwaltungs_service.Model.Entities.Dto;
 using AutoMapper;
 
-namespace auftragsverwaltung_service.Service
+namespace auftragsverwaltungs_service.Service
 {
     public class MappingProfile : Profile
     {
         public MappingProfile()
         {
             CreateMap<Model.Entities.Customer, CustomerDto>().ReverseMap();
-            CreateMap<Milestone, MilestoneDto>().ReverseMap();
-            CreateMap<Order, OrderDto>().ReverseMap();
-            CreateMap<Team, TeamDto>().ReverseMap();
+            CreateMap<Model.Entities.Milestone, MilestoneDto>().ReverseMap();
+            CreateMap<Model.Entities.Order, OrderDto>().ReverseMap();
+            CreateMap<Model.Entities.Team, TeamDto>().ReverseMap();
         }
     }
 }

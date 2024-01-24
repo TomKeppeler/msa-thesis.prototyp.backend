@@ -1,4 +1,4 @@
-namespace auftragsverwaltung_service.Model.Entities.Dto;
+namespace auftragsverwaltungs_service.Model.Entities.Dto;
 
 public class CustomerDto : BaseDto
 {

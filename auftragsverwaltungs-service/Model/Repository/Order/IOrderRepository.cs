@@ -1,7 +1,4 @@
-
-
-
-namespace auftragsverwaltung_service.Model.Repository.Order;
+namespace auftragsverwaltungs_service.Model.Repository.Order;
 
 public interface IOrderRepository
 {

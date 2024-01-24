@@ -1,5 +1,5 @@
-using auftragsverwaltung_service.Model.Entities.Dto;
-using auftragsverwaltung_service.Service.Customer;
+using auftragsverwaltungs_service.Model.Entities.Dto;
+using auftragsverwaltungs_service.Service.Customer;
 using Microsoft.AspNetCore.Mvc;
 
 namespace auftragsverwaltungs_service.Controller;

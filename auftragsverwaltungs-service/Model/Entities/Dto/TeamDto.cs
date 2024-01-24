@@ -1,7 +1,6 @@
 using System.Collections.ObjectModel;
-using System.ComponentModel.DataAnnotations;
 
-namespace auftragsverwaltung_service.Model.Entities.Dto;
+namespace auftragsverwaltungs_service.Model.Entities.Dto;
 
 public class TeamDto : BaseDto
 {
